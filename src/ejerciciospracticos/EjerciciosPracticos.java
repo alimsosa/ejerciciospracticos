@@ -7,6 +7,7 @@ package ejerciciospracticos;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
 
 /**
@@ -87,8 +88,31 @@ public class EjerciciosPracticos {
         String[] input5={"flower","flow","flight"};
         System.out.println("Resultado del ejercicio 5:");
         System.out.println((ejemplo5.longestCommonPrefix(input5)));   
-    }
-    }
+    
+            /*
+        Ejercicio6 
+        You are given two non-empty linked lists representing two non-negative integers.
+        The digits are stored in reverse order, and each of their nodes contains a single digit.
+        Add the two numbers and return the sum as a linked list.
+        You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+        Input: l1 = [2,4,3], l2 = [5,6,4]
+        Output: [7,0,8]
+        Explanation: 342 + 465 = 807.
+        */
+        Ejercicio6 ejemplo6 = new Ejercicio6();
+        LinkedList lista1= new LinkedList();
+        lista1.addLast(2);
+        lista1.addLast(4);
+        lista1.addLast(3);
+        LinkedList lista2= new LinkedList();
+        lista2.addLast(5);
+        lista2.addLast(6);
+        lista2.addLast(4);
 
+        System.out.println("Resultado del ejercicio 6:");
+        System.out.println((ejemplo6.addTwoNumbers(lista1,lista2)));    
+            
+    }
+}
 
 
