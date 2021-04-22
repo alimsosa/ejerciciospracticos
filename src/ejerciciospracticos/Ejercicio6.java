@@ -14,34 +14,30 @@ import java.util.Stack;
  */
 public class Ejercicio6 { 
     public LinkedList addTwoNumbers(LinkedList l1, LinkedList l2) {
-        Stack pila1 = new Stack();
-        Stack pila2 = new Stack();
         LinkedList resultado = new LinkedList();
-        
-        for (int i = 0; i < l1.size(); i++){
-        pila1.push(l1.get(i));   
-        }
-        
-        for (int i = 0; i < l2.size(); i++){
-        pila2.push(l2.get(i));
-        }
-        
-        while(pila1.size()!=0 && pila2.size()!=0){
-            int i=(int)pila1.pop();
-            int j=(int)pila2.pop();
-            int temp=i+j;
-            int carry=0;
-            if(temp<10){
-                resultado.add(temp+carry);
+        int carry=0;
+        int index=0;
+        int temp1,temp2;
+        int temporal;
+        while (index<l1.size()){
+            temp1=(int)l1.get(index);
+            temp2=(int)l2.get(index);
+            temporal=temp1+temp2;
+            
+            if(temporal<10){
+                resultado.addFirst(temporal+carry);
                 carry=0;
             }
             else{
-                resultado.add(temp%10);
-                carry= temp-10;
+                temporal+=carry;
+                resultado.addFirst(temporal-10);
                 carry=1;
                 
             }
+            index++;
         }
+        
+        
         return resultado;
         
     }
