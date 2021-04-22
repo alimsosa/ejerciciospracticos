@@ -40,15 +40,13 @@ public class EjerciciosPracticos {
         
         /*Ejercicio 2:
         Given a signed 32-bit integer x, return x with its digits reversed.
-        If reversing x causes the value to go outside the signed 32-bit integer
-        range [-231, 231 - 1],then return 0.
         Ex:
         Input: x = 123
         Output: 321
         
         */
         Ejercicio2 ejemplo2 = new Ejercicio2();
-        int input=123;
+        int input=893;
         System.out.println("Resultado del ejercicio 2:");
         System.out.println((ejemplo2.reverse(input)));
         
