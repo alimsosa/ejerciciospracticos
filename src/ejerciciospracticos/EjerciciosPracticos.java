@@ -61,6 +61,32 @@ public class EjerciciosPracticos {
         System.out.println("Resultado del ejercicio 3, con 121:");
         System.out.println((ejemplo3.isPalindrome(input2)));   
         
+        /*
+        Ejercicio4
+        Given a roman numeral, convert it to an integer.
+        Example:
+        Input: s = "III"
+        Output: 3
+                    */
+        Ejercicio4 ejemplo4 = new Ejercicio4();
+        String input4="IV";
+        System.out.println("Resultado del ejercicio 4, con IV:");
+        System.out.println((ejemplo4.romanToInt(input4)));   
+    
+    
+    /*
+    Ejercicio 5
+    Write a function to find the longest common prefix string amongst an array of strings.
+
+    If there is no common prefix, return an empty string ""
+    Ex:
+    Input: strs = ["flower","flow","flight"]
+    Output: "fl"
+    */
+        Ejercicio5 ejemplo5 = new Ejercicio5();
+        String[] input5={"flower","flow","flight"};
+        System.out.println("Resultado del ejercicio 5:");
+        System.out.println((ejemplo5.longestCommonPrefix(input5)));   
     }
     }
 
