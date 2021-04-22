@@ -48,9 +48,20 @@ public class EjerciciosPracticos {
         Ejercicio2 ejemplo2 = new Ejercicio2();
         int input=893;
         System.out.println("Resultado del ejercicio 2:");
-        System.out.println((ejemplo2.reverse(input)));
+        System.out.println((ejemplo2.reverse(input)));   
         
-    }  
+        /*Ejercicio3
+        Given an integer x, return true if x is palindrome integer.
+        An integer is a palindrome when it reads the same backward as forward.
+        For example, 121 is palindrome while 123 is not.
+        */
+        
+        Ejercicio3 ejemplo3 = new Ejercicio3();
+        int input2=121; //deveria volver true
+        System.out.println("Resultado del ejercicio 3, con 121:");
+        System.out.println((ejemplo3.isPalindrome(input2)));   
+        
+    }
     }
 
 
