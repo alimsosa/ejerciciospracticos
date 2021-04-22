@@ -102,6 +102,7 @@ public class EjerciciosPracticos {
         The number of nodes in each linked list is in the range [1, 100].
         0 <= Node.val <= 9
         It is guaranteed that the list represents a number that does not have leading zeros.
+        It is guaranteed that bot lists have the same size.
         */
         Ejercicio6 ejemplo6 = new Ejercicio6();
         LinkedList lista1= new LinkedList();
@@ -112,6 +113,7 @@ public class EjerciciosPracticos {
         lista2.addLast(5);
         lista2.addLast(6);
         lista2.addLast(4);
+        
         System.out.println("Resultado del ejercicio 6:");
         System.out.println((ejemplo6.addTwoNumbers(lista1,lista2)));    
             

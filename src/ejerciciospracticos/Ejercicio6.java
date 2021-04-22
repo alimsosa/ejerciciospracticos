@@ -19,7 +19,7 @@ public class Ejercicio6 {
         int index=0;
         int temp1,temp2;
         int temporal;
-        while (index<l1.size()){
+        while (index<l1.size() && index<l2.size()){
             temp1=(int)l1.get(index);
             temp2=(int)l2.get(index);
             temporal=temp1+temp2;
@@ -34,12 +34,18 @@ public class Ejercicio6 {
                 carry=1;
                 
             }
+
             index++;
-        }
-        
-        
+        } 
+            if(carry!=0){
+             resultado.addFirst(carry);  
+            }
+          
         return resultado;
         
     }
     
 }
+/*
+
+*/
