@@ -117,6 +117,28 @@ public class EjerciciosPracticos {
         System.out.println("Resultado del ejercicio 6:");
         System.out.println((ejemplo6.addTwoNumbers(lista1,lista2)));    
             
+        
+        
+        /*
+        Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+        determine if the input string is valid.
+
+        An input string is valid if:
+
+        Open brackets must be closed by the same type of brackets.
+        Open brackets must be closed in the correct order.
+        Input: s = "()[]{}" Output: true
+        Input: s = "(]" Output: false
+        */
+        
+        
+        Ejercicio7 ejemplo7 = new Ejercicio7();
+        String s = "(]";
+        
+        System.out.println(ejemplo7.isValid(s));
+        
+        
+        
     }
 }
 

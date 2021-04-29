@@ -9,6 +9,13 @@
   body {
       background-color: #f6f6f6;
     }
+
+    .fondo:hover{
+      background-color: #aad8d3;
+    }
+    .circular{
+      border-radius: 47%;
+    }
 h1
 {
   color: #99bbad;
