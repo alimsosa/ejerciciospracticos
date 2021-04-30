@@ -6,16 +6,24 @@ body{
 h1{
   margin-top: 0;
 font-family: 'Sacramento', cursive;
+color: white;
 }
 h2{
 font-family: 'Montserrat', sans-serif;
+color: white;
 }
 h3{
   font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+p
+{color:white;}
+table{
+  color: white;
 }
 
 div{
-  background-color: #98ddca;
+  background-color: #06062A;
   border: 10px;
   padding: 20px;
 
@@ -30,6 +38,8 @@ table{
 .top-container{
   position:relative;
   padding-top: 50px;
+  background-image: url("https://images.hdqwalls.com/download/planets-vector-10k-j4-1336x768.jpg");
+  height: 700px;
 }
 .middle-container{
 
@@ -42,18 +52,25 @@ table{
   height: 100px;
 }
 
-.cloud{
+.star{
   position: absolute;
   top:60px;
   left: 200px;
+  width: 112px;
+  height: 112px;
 }
-.cloud2{
+.guy{
   position: fixed;
   right: 200px;
+  top:80px;
+  width: 150px;
+  height: 150px;
 }
-.cloud22{
-  position: fixed;
-  right: 150px;
+.alien{
+  position: absolute;
+  right: 100px;
+  width: 100px;
+  height: 100px;
 }
 .cloud3{
   position: absolute;
