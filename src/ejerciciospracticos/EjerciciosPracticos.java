@@ -5,11 +5,16 @@
  */
 package ejerciciospracticos;
 
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
-
+import java.util.*;
+import java.util.regex.*;
+import java.text.*;
 /**
  *
  * @author estudiante.fit
@@ -19,6 +24,7 @@ public class EjerciciosPracticos {
     /**
      * @param args the command line arguments
      */
+    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
 
         /*Ejercicio 1:
@@ -139,7 +145,89 @@ public class EjerciciosPracticos {
         
         
         
-    }
-}
+        
+        Calculadora calculadora = new Calculadora();
+        System.out.println(calculadora.sumar(1,2));
+        
+        
+        //-------------------------------------
+        //Reverse array ex: [1,2,3] --> [3,2,1]
+        ReverseArray reverse = new ReverseArray();
+        
+        List<Integer> inicial =new ArrayList<Integer>(); 
+        inicial.add(1);
+        inicial.add(2);
+        inicial.add(3);
+        
+        
+        System.out.println("reversaaaaaaaaaaa ");
+        
+         List<Integer> res =new ArrayList<Integer>(); 
+         
+        res=reverse.reverseArray(inicial);
+        
+        System.out.println(res);
+        
+        //-------------------------------------
+        
+        //Anagrams
+        
+        Anagrams anagramas = new Anagrams();
+        
+        String[] inicial1={"code","ecod","doce"};
+        
+        List<String> resultadoAnagramas=anagramas.funWithAnagrams(inicial1);
+        
+        
+        //___________---------------____________---------------
+        
+       LetraMasRepetida letraMaxima = new LetraMasRepetida();
+       
+      String cadena= "aaaeeee";
+      
+        System.out.println(letraMaxima.contarLetra(cadena));
+       
+        
+        //-----------------------------------
+        RotateArray rotate = new RotateArray();
+        List<Integer> aRotar = new ArrayList<>();
+        aRotar.add(1);
+        aRotar.add(2);
+        aRotar.add(3);
+        aRotar.add(4);
+        aRotar.add(5);
+        
+        System.out.println("antes de rotar: "+aRotar);
+        
+        List<Integer> rotada= rotate.rotLeft(aRotar, 2);
+        System.out.println(rotada);
+        
+        
+    String original = "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýÿ";
+    // Cadena de caracteres ASCII que reemplazarán los originales.
+    String ascii = "AAAAAAACEEEEIIIIDNOOOOOOUUUUYBaaaaaaaceeeeiiiionoooooouuuuyy";
+    String output = "holááááaëì";
+    for (int i=0; i<original.length(); i++) {
+    // Reemplazamos los caracteres especiales.
 
+        output = output.replace(original.charAt(i), ascii.charAt(i));
+
+    }//for i
+        System.out.println(output);
+        
+     
+        SortA sorted= new SortA();
+        
+        int[] hola= {5,4,3,2,1};
+        
+        System.out.println(sorted.sortA(hola));
+        
+        
+    }
+    
+    
+    
+    
+    
+}
 
